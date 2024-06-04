@@ -1,0 +1,1095 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Platypi:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,667;1,667&family=Sigmar+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Platypi:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,667;1,667&family=Sigmar+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: "Sigmar One", sans-serif. */
+}
+
+ol,ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --------------------nav------------------- */
+
+nav {
+    font-family: "Sigmar One", sans-serif;
+    background-color: #c0bcbc13;
+}
+
+.nav_block {
+    display: flex;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name_block {
+    display: flex;
+    align-items: center;
+}
+.name_block {
+    gap: 5px;
+}
+.name_block h1 {
+    font-size: 20px;
+    font-weight: 30px;
+}
+
+.burger-menu {
+    transition: .3s;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    display: none;
+}
+
+.course_guide_block ul {
+    display: flex;
+}
+.course_guide_block ul{
+    gap: 20px;
+}
+.course_guide_block ul li a {
+    font-size: 16px;
+    font-weight: 25px;
+    color: #1101019d;
+}
+
+.course_guide_block ul li a:hover {
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.icon_block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* --------------- header -------------- */
+
+header {
+    padding: 10px 20px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #c0bcbc13;
+}
+
+.background_block {
+    background: url('./img/chocolate-covered-cocoa-powder\ 1.png') center/cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+
+.text {
+    width: 100%;
+    /* margin-top: 270px; */
+    padding-top: 300px;
+}
+.text_block {
+    height: 500px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center; 
+    padding: 0px 50px;
+}
+.text_block h1 {
+    /* padding-top: 30%; */
+    width: 50%;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.button_block {
+    align-items: center;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.button_block button {
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #FD9222;
+    padding: 14px 40px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#special {
+    background: none;
+    border: 1px solid white;
+}
+
+
+/* ---------------- main --------------- */
+
+main {
+    font-family: "Montserrat", sans-serif;
+}
+
+.main_block {
+    padding: 50px 0;
+    color: white;
+    background-color: #c0bcbc13;
+}
+
+.consistent_block {
+    display: flex;
+    padding: 40px 20px;
+    color: white;
+    background-color: #1E1823;
+}
+
+.advertising_block h1 {
+    padding: 30px 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+.advertising_block p {
+    font-size: 16px;
+    font-weight: 100;
+}
+.advertising_block {
+    padding: 10px 30px;
+}
+
+.line_block {
+    height: 230px;
+    border-left: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+/* --------- detail_block ---------- */
+
+.detail_block {
+    background-color: #c0bcbc13;
+    padding: 20px;
+}
+
+.feeling_block {
+    /* width: 900px; */
+    text-align: center;
+}
+.feeling_block h1 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    line-height: 35px;
+}
+.feeling_block h1 span {
+    color: #FD9222;
+}
+
+.details_block {
+    display: flex;
+    gap: 20px;
+    padding: 50px 0;
+}
+.details_block h2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.flex_block {
+    display: flex;
+    gap: 20px;
+}
+
+.flex_two_block {
+    display: flex;
+    gap: 20px;
+}
+
+.chocolate_block {
+    border-radius: 15px;
+    background-color: #FD9222;
+    color: white;
+}
+.chocolate_block img {
+    padding: 28px 37px;
+}
+.chocolate_block h2 {
+    padding: 20px 30px;
+}
+
+.milk_block {
+    color: black;
+    border: 1px solid #FD9222;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.milk_block img {
+    padding: 28px 37px;
+}
+.milk_block h2 {
+    padding: 20px 30px;
+}
+
+.nuts_block {
+    border-radius: 15px;
+    background-color: #1E1823;
+    color: white;
+}
+.nuts_block h2 {
+    padding: 20px 30px;
+}
+.nuts_block img {
+    padding: 28px 37px;
+}
+
+.sweetchocolate_block {
+    border: 1px solid #FD9222;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.sweetchocolate_block img {
+    padding: 28px 37px;
+}
+.sweetchocolate_block h2 {
+    padding: 20px 30px;
+}
+
+/* ----------------- prepare_block -------------- */
+
+.prepare_block h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 80px;
+}
+.prepare_block h1 span {
+    color: #FD9222;
+}
+
+.img_block {
+    display: flex;
+    padding-top: 70px;
+    gap: 30px;
+}
+
+.ingredient_block{
+    padding-right: 30xp;
+    background-color: white;
+    border-radius: 15px;
+    padding-right: 30xp;
+    padding: 30px;
+}
+.ingredient_block h2 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;  
+}
+.ingredient_block ul {
+    background-color: white;
+    list-style: disc;
+}
+.ingredient_block ul li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 20px;
+}
+
+/* ---------------------- product_block ---------------------- */
+
+.product_block h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.product_block h1 span {
+    color: #FD9222;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 30px 20px ;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+}
+.swiper-slide h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.swiper-slide h3 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 15px;
+}
+.swiper-slide button {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    border: 1px solid #1111111A;
+    background-color: #FAFAFA;
+    padding: 8px 20px;
+    border-radius: 100px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper_block {
+    padding-top: 55px;
+}
+
+/* ------------ seller_block --------------- */
+
+.seller_block h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 70px;
+}
+.seller_block h1 span {
+    color: #FD9222;
+}
+
+.images_block{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+.images_block img {
+    border-radius: 15px;
+}
+
+.story_blcok {
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.story_blcok p {
+    width: 48%;
+}
+.story_blcok button {
+    cursor: pointer;
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: none;
+    background-color: #FD9222;
+    color: white;
+}
+
+/* ----------------- loved ---------------- */
+
+.loved h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 100px;
+}
+.loved h1 span {
+    color: #FD9222;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySwiperTwo {
+    width: 100%;
+    height: 380px;
+}
+
+.slideTwo {
+    position: relative;
+    margin-top: 100px;
+    height: 150px !important;
+}
+.slideTwo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slideTwo div h1 {
+    padding: 25px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.slideTwo div p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.slideTwo img {
+    margin-bottom: 18px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -45px;
+}
+
+.loved_block {
+    text-align: center;
+    padding: 50px 0;
+}
+.loved_block button{
+    cursor: pointer;
+    padding: 14px 40px;
+    border: 1px solid #FD9222;
+    font-size: 18px;
+    font-weight: 500;
+    background: none;
+    border-radius: 100px;
+    margin-bottom: 60px;
+}
+
+/* footer */
+
+footer {
+    font-family: "Montserrat", sans-serif;
+}
+
+.decor_block {
+    background:  url('./img/Subcribe (2).png') center/cover;
+    width: 100%;
+    height: 50vh;
+}
+.decor_block {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.decor_block h1 {
+    width: 30%;
+    padding: 30px;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+}
+.decor_block p {
+    width: 40%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.decor_block button {
+    cursor: pointer;
+    padding: 14px 40px;
+    border-radius: 100px;
+    background-color: #FD9222;
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+/* Contact_block */
+
+.Contact_block {
+    padding: 0 20px;
+    background-color: #1E1823;
+}
+
+.textcontact_block {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.textcontact_block h1 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 500;   
+    color: white;
+    width: 30%;
+}
+.textcontact_block h1 span {
+    color: #FD9222;
+}
+
+.Our_contacts {
+    display: flex;
+    gap: 40px;
+}
+.Our_contacts h2{
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: white;
+}
+.Our_contacts ul li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+}
+
+.line_two_block {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+}
+
+.end_block ul {
+    padding-top: 24px;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+.end_block ul li a {
+    padding-bottom: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: white;
+}
+
+@media screen and (max-width: 1192px) {
+
+    .details_block {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* ----------------- prepare_block -------------- */
+
+    .img_block {
+        gap: 20px;
+    }
+
+    .ingredient_block {
+        height: 340px;
+    }
+    .ingredient_block h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .ingredient_block ul li {
+        padding-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .chocolate_block img {
+        padding: 20px;
+    }
+    
+    .milk_block img {
+        padding: 20px;
+    }
+    
+    .nuts_block img {
+        padding: 20px;
+    }
+
+    .sweetchocolate_block img {
+        padding: 20px;
+    }
+
+    .images_block{
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1128px) {
+
+    .images_block img {
+        width: 300px;
+    }
+    
+    .image-1 img{
+        width: 500px;
+        height: 357px;
+    }
+
+    .ingredient_block {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+
+    /* --------------------nav------------------- */
+
+    .name_block {
+        gap: 4px;
+    }
+    .name_block h1 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .course_guide_block ul{
+        gap: 10px;
+    }
+    .course_guide_block ul li a {
+        font-size: 14px;
+        font-weight: 25px;
+    }
+
+    /* --------------- header -------------- */
+
+    .text_block h1 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    .button_block {
+        padding-top: 20px;
+        gap: 10px;
+    }
+    .button_block button {
+        padding: 13px 35px;
+        border-radius: 100px;
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    .decor_block  {
+        /* padding: 100px 0; */
+    }
+    .decor_block p {
+        width: 50%;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 1046px) {
+
+    .textcontact_block h1 {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .chocolate_block img {
+        padding: 10px;
+    }
+    
+    .milk_block img {
+        padding: 10px;
+    }
+    
+    .nuts_block img {
+        padding: 10px;
+    }
+
+    .sweetchocolate_block img {
+        padding: 10px;
+    }
+    .sweetchocolate_block h2 {
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 1016px) {
+
+    .ingredient_block {
+        height: 300px;
+    }
+    .ingredient_block h2 {
+        font-size: 16px;
+    }
+    .ingredient_block ul li {
+        font-size: 13px;
+    }
+
+    .swiper-slide h2 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+    .swiper-slide button {
+        font-size: 13px;
+        padding: 6px 15px;
+    }
+}
+
+@media screen and (max-width: 956px) {
+
+    .ingredient_block {
+        height: 300px;
+    }
+    .ingredient_block h2 {
+        font-size: 15px;
+    }
+    .ingredient_block ul li {
+        font-size: 12px;
+    }
+
+    .details_block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chocolate_block img {
+        padding: 20px 30px;
+    }
+    
+    .milk_block img {
+        padding: 20px 30px;
+    }
+    
+    .nuts_block img {
+        padding: 20px 30px;
+    }
+
+    .sweetchocolate_block img {
+        padding: 20px 30px;
+    }
+    .sweetchocolate_block h2 {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 946px) {
+
+    .course_guide_block {
+        display: none;
+    }
+
+    .icon_block {
+        display: none;
+    }
+
+    .burger-menu {
+        display: inline-block;
+        justify-content: space-between;
+    }
+
+    .advertising_block p {
+        font-size: 13px;
+    }
+    .advertising_block h1 {
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    .advertising_block img {
+        width: 50px;
+    }
+
+    .feeling_block h1 {
+        padding-top: 35px;
+        padding-bottom: 25px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .feeling_block p {
+        font-size: 16px;
+    }
+
+    .prepare_block h1 {
+        font-size: 26px;
+        padding-top: 50px;
+    }
+
+    .product_block h1 {
+        font-size: 26px;
+    }
+
+    .seller_block h1 {
+        font-size: 26px;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .loved h1 {
+        font-size: 26px;
+    }
+
+    .loved_block button {
+        cursor: pointer;
+        padding: 12px 35px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 928px) {
+    .image-1 img {
+        width: 380px;
+        height: 298px;
+    }
+
+    .ingredient_block ul li {
+        padding-top: 8px;
+    }
+
+    .ingredient_block {
+        height: 240px;
+    }
+
+    .images_block img {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 902px) {
+    
+    .img_block {
+        flex-direction: column;
+    }
+
+    .image-1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .images_block img {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 834px) {  
+
+    .text_block h1 {
+        font-size: 24px;
+    }
+
+    .slideTwo div h1 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    .slideTwo div p {
+        font-size: 13px;
+    }
+
+    .slideTwo img {
+        width: 70px;
+        height: 70px;
+        top: -40px;
+    }
+
+    .decor_block {
+        padding: 100px 0;
+    }
+
+    .decor_block h1 {
+        font-size: 22px;
+    }
+
+    .swiper-slide h2 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    .images_block div {
+        display: none;
+    }
+    .images_block img {
+        width: 360px;
+    }
+
+    .button_block {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .images_block img {
+        width: 300px;
+    }
+
+    .swiper-slide h2 {
+        font-size: 12px;
+    }
+
+    .advertising_block p {
+        font-size: 10px;
+    }
+    .advertising_block h1 {
+        padding: 20px 0;
+        font-size: 16px;
+    }
+
+    .decor_block h1 {
+        font-size: 19px;
+    }
+    .decor_block p {
+        font-size: 14px;
+        width: 70%;
+    }
+    .decor_block button {
+        padding: 10px 30px;
+        font-size: 13px;
+    }
+
+    .textcontact_block h1 {
+        font-size: 20px;
+    }
+
+    .Our_contacts h2 {
+        font-size: 12px;
+    }
+    .Our_contacts ul li {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .end_block ul {
+        padding-bottom: 36px;
+    }
+    .end_block ul li a {
+        padding-bottom: 20px;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 16px;
+        color: white;
+    }
+
+    .slideTwo div h1 {
+        font-size: 14px;
+    }
+    .slideTwo div p {
+        font-size: 10px;
+    }
+
+    
+}
+
+@media screen and (max-width: 654px) {
+    .consistent_block {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .line_block {
+        display: none;
+    }
+
+    .text_block h1 {
+        font-size: 20px;
+        width: 60%;
+        padding-top: 350px;
+    }
+
+    .button_block button {
+        padding: 12px 30px;
+        border-radius: 100px;
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    .feeling_block h1 {
+        font-size: 20px;
+    }
+    .feeling_block p {
+        font-size: 13px;
+    }
+
+    .prepare_block h1 {
+        font-size: 23px;
+    }
+
+    .seller_block h1 {
+        font-size: 23px;
+        padding-bottom: 30px;
+    }
+
+    .product_block h1 {
+        font-size: 23px;
+    }
+
+    .loved h1 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 616px) {
+    .images_block img {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .images_block img {
+        width: 250px;
+    }
+
+    .story_blcok p {
+        font-size: 12px;
+    }
+
+    .story_blcok button {
+        padding: 12px 30px;
+        font-size: 12px;
+    }
+
+    .slideTwo img {
+        width: 60px;
+        height: 60px;
+        top: -35px;
+    }
+
+    .loved_block button {
+        padding: 10px 30px;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .decor_block h1 {
+        font-size: 16px;
+    }
+    .decor_block p {
+        font-size: 13px;
+    }
+    .decor_block {
+        padding: 120px 0;
+    }
+}
