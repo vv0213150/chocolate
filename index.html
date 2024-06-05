@@ -43,9 +43,7 @@
                             <button>Buy now</button>
                             <button id="special">How it’s made</button>
                         </div>
-                        <div class="scroll_block">
-                            <img src="./img/2.png" alt="scroll">
-                        </div>
+                        
                     </div>    
                 </div>
             </div>
@@ -291,8 +289,8 @@
               pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
-              },
-              breakpoints: {
+            },
+            breakpoints: {
                 "@0.00": {
                   slidesPerView: 1,
                   spaceBetween: 10,
@@ -309,7 +307,21 @@
                   slidesPerView: 4,
                   spaceBetween: 50,
                 },
-              },
+            },
+            breakpoints: {
+                // когда размер экрана больше или рано >= 320px
+                0: {  
+                    slidesPerView: 1,
+                },
+                // когда размер экрана больше или рано >= 500px
+                500: {
+                    slidesPerView: 2,
+                },
+                // когда размер экрана больше или рано >= 800px
+                800: {
+                    slidesPerView: 3,
+                },
+            }
             });
         </script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -321,7 +333,21 @@
               pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
-              },
+            },
+            breakpoints: {
+                // когда размер экрана больше или рано >= 320px
+                0: {  
+                    slidesPerView: 1,
+                },
+                // когда размер экрана больше или рано >= 500px
+                500: {
+                    slidesPerView: 2,
+                },
+                // когда размер экрана больше или рано >= 800px
+                800: {
+                    slidesPerView: 3,
+                },
+            }
             });
         </script>
     </body>
