@@ -8,7 +8,12 @@
     /* font-family: "Sigmar One", sans-serif. */
 }
 
-ol,ul {
+html {
+    scroll-behavior: smooth;
+}
+
+ol,
+ul {
     list-style: none;
 }
 
@@ -25,7 +30,7 @@ nav {
 
 .nav_block {
     display: flex;
-    padding: 20px 30px;
+    padding: 20px 35px;
     align-items: center;
     justify-content: space-between;
 }
@@ -34,9 +39,11 @@ nav {
     display: flex;
     align-items: center;
 }
+
 .name_block {
     gap: 5px;
 }
+
 .name_block h1 {
     font-size: 20px;
     font-weight: 30px;
@@ -53,9 +60,11 @@ nav {
 .course_guide_block ul {
     display: flex;
 }
-.course_guide_block ul{
+
+.course_guide_block ul {
     gap: 20px;
 }
+
 .course_guide_block ul li a {
     font-size: 16px;
     font-weight: 25px;
@@ -69,13 +78,14 @@ nav {
 .icon_block {
     display: flex;
     align-items: center;
+    margin-top: 8px;
     gap: 20px;
 }
 
 /* --------------- header -------------- */
 
 header {
-    padding: 10px 20px;
+    padding: 10px 35px;
     font-family: "Montserrat", sans-serif;
     background-color: #c0bcbc13;
 }
@@ -92,13 +102,14 @@ header {
     /* margin-top: 270px; */
     padding-top: 300px;
 }
+
 .text_block {
-    height: 500px;
     flex-direction: column;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding: 0px 50px;
 }
+
 .text_block h1 {
     /* padding-top: 30%; */
     width: 50%;
@@ -115,15 +126,18 @@ header {
     gap: 10px;
     padding-bottom: 20px;
 }
+
 .button_block button {
     cursor: pointer;
     border: none;
-    color: white;
     background-color: #FD9222;
     padding: 14px 40px;
     border-radius: 100px;
     font-size: 16px;
     font-weight: 100;
+}
+.button_block button a {
+    color: white;
 }
 
 #special {
@@ -146,7 +160,7 @@ main {
 
 .consistent_block {
     display: flex;
-    padding: 40px 20px;
+    padding: 40px 35px;
     color: white;
     background-color: #1E1823;
 }
@@ -156,10 +170,12 @@ main {
     font-size: 25px;
     font-weight: 500;
 }
+
 .advertising_block p {
     font-size: 16px;
     font-weight: 100;
 }
+
 .advertising_block {
     padding: 10px 30px;
 }
@@ -173,91 +189,76 @@ main {
 
 .detail_block {
     background-color: #c0bcbc13;
-    padding: 20px;
+    padding: 35px;
 }
 
 .feeling_block {
-    /* width: 900px; */
     text-align: center;
 }
+
 .feeling_block h1 {
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 30px;
-    font-size: 30px;
+    font-size: 32px;
     line-height: 35px;
 }
+
 .feeling_block h1 span {
     color: #FD9222;
 }
 
 .details_block {
     display: flex;
-    gap: 20px;
-    padding: 50px 0;
+    padding: 50px 0; 
+    justify-content: center;
 }
+
 .details_block h2 {
+    /* padding: 10px; */
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
 }
 
-.flex_block {
-    display: flex;
-    gap: 20px;
-}
-
+.details_block .flex_block,
 .flex_two_block {
+    margin: 10px;
     display: flex;
+    justify-content: center;
     gap: 20px;
+    width: 100%;
 }
 
-.chocolate_block {
+.flex_block div {
+    padding: 20px;
     border-radius: 15px;
+    border: 1px solid orange;
+}
+
+.flex_two_block div {
+    padding: 20xp ;
+    border-radius: 15px;
+    border: 1px solid #FD9222;
+}
+
+.details_block div img {
+    width: 100%;
+    height: 200px;
+}
+
+.milk {
     background-color: #FD9222;
     color: white;
 }
-.chocolate_block img {
-    padding: 28px 37px;
-}
-.chocolate_block h2 {
-    padding: 20px 30px;
-}
 
-.milk_block {
-    color: black;
-    border: 1px solid #FD9222;
-    border-radius: 15px;
-    background-color: #fff;
-}
-.milk_block img {
-    padding: 28px 37px;
-}
-.milk_block h2 {
-    padding: 20px 30px;
-}
-
-.nuts_block {
-    border-radius: 15px;
+.nuts {
+    padding: 20px;
     background-color: #1E1823;
     color: white;
 }
-.nuts_block h2 {
-    padding: 20px 30px;
-}
-.nuts_block img {
-    padding: 28px 37px;
-}
 
-.sweetchocolate_block {
-    border: 1px solid #FD9222;
-    border-radius: 15px;
-    background-color: #fff;
-}
-.sweetchocolate_block img {
-    padding: 28px 37px;
-}
-.sweetchocolate_block h2 {
-    padding: 20px 30px;
+.sweet {
+    padding: 20px;
 }
 
 /* ----------------- prepare_block -------------- */
@@ -265,34 +266,49 @@ main {
 .prepare_block h1 {
     text-align: center;
     text-transform: uppercase;
-    padding-top: 80px;
+    padding-top: 140px;
 }
+
 .prepare_block h1 span {
     color: #FD9222;
 }
 
 .img_block {
-    display: flex;
+    display: inline-flex;
     padding-top: 70px;
-    gap: 30px;
+    gap: 20px;
 }
 
-.ingredient_block{
-    padding-right: 30xp;
+.image-1 {
+    width: 50%;
+}
+.image-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.ingredient_block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100%; */
     background-color: white;
     border-radius: 15px;
-    padding-right: 30xp;
     padding: 30px;
 }
+
 .ingredient_block h2 {
     font-size: 25px;
     font-weight: 600;
-    line-height: 30px;  
+    line-height: 30px;
 }
+
 .ingredient_block ul {
     background-color: white;
     list-style: disc;
 }
+
 .ingredient_block ul li {
     font-size: 16px;
     font-weight: 400;
@@ -303,16 +319,16 @@ main {
 /* ---------------------- product_block ---------------------- */
 
 .product_block h1 {
-    font-size: 30px;
+    font-size: 32px;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 140px;
     padding-bottom: 70px;
-}
+} 
 .product_block h1 span {
     color: #FD9222;
-}
+} 
 
 .swiper {
     width: 100%;
@@ -323,11 +339,24 @@ main {
     text-align: center;
     font-size: 18px;
     background: #fff;
+}
+.swiper-slide div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 300px;
+    object-fit:contain ;
+}
+
+.swiper-slide {
+    font-size: 18px;
     border-radius: 15px;
-    padding: 30px 20px ;
+    /* padding: 30px 20px ; */
     border: 1px solid rgba(0, 0, 0, 0.103);
 }
 .swiper-slide h2 {
@@ -350,41 +379,43 @@ main {
     background-color: #FAFAFA;
     padding: 8px 20px;
     border-radius: 100px;
+    margin-bottom: 20px;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 
 .swiper_block {
-    padding-top: 55px;
+    padding-top: 80px;
 }
 
 /* ------------ seller_block --------------- */
 
 .seller_block h1 {
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 32px;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 140px;
     padding-bottom: 70px;
 }
+
 .seller_block h1 span {
     color: #FD9222;
 }
 
-.images_block{
+.images_block {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 40px 0;
 }
+.images_block div {
+    gap: 10px;
+}
+
 .images_block img {
     border-radius: 15px;
 }
+
 
 .story_blcok {
     font-size: 14px;
@@ -393,33 +424,40 @@ main {
     align-items: center;
     justify-content: space-between;
 }
+
 .story_blcok p {
     width: 48%;
 }
+
 .story_blcok button {
     cursor: pointer;
     padding: 14px 40px;
     border-radius: 100px;
     border: none;
     background-color: #FD9222;
+}
+.story_blcok button a {
     color: white;
 }
 
 /* ----------------- loved ---------------- */
 
 .loved h1 {
-    font-size: 30px;
+    font-size: 32px;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 140px;
+    padding-bottom: 30px;
 }
+
 .loved h1 span {
     color: #FD9222;
 }
 
 .swiper {
     width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
@@ -431,13 +469,6 @@ main {
     align-items: center;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .mySwiperTwo {
     width: 100%;
     height: 380px;
@@ -446,27 +477,33 @@ main {
 .slideTwo {
     position: relative;
     margin-top: 100px;
-    height: 150px !important;
+    height: 200px !important;
 }
+
 .slideTwo div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .slideTwo div h1 {
-    padding: 25px 0;
+    padding-top: 45px;
+    padding-bottom: 0;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
 }
+
 .slideTwo div p {
+    padding: 20px 20px 0px 20px;
     text-align: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
 }
+
 .slideTwo img {
     margin-bottom: 18px;
     width: 80px;
@@ -479,7 +516,8 @@ main {
     text-align: center;
     padding: 50px 0;
 }
-.loved_block button{
+
+.loved_block button {
     cursor: pointer;
     padding: 14px 40px;
     border: 1px solid #FD9222;
@@ -489,6 +527,9 @@ main {
     border-radius: 100px;
     margin-bottom: 60px;
 }
+.loved_block button a {
+    color: black;
+}
 
 /* footer */
 
@@ -497,10 +538,11 @@ footer {
 }
 
 .decor_block {
-    background:  url('./img/Subcribe (2).png') center/cover;
+    background: url('./img/Subcribe (2).png') center/cover;
     width: 100%;
     height: 100%;
 }
+
 .decor_block {
     text-align: center;
     justify-content: center;
@@ -510,20 +552,23 @@ footer {
     color: white;
     padding: 30px 0;
 }
+
 .decor_block h1 {
-    width: 30%;
+    width: 50%;
     padding: 30px;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 28px;
     font-weight: 600;
 }
+
 .decor_block p {
-    width: 40%;
-    font-size: 14px;
+    width: 80%;
+    font-size: 16px;
     font-weight: 400;
     line-height: 19px;
 }
+
 .decor_block button {
     cursor: pointer;
     padding: 14px 40px;
@@ -534,11 +579,14 @@ footer {
     font-size: 16px;
     margin-top: 40px;
 }
+.decor_block button a {
+    color: white;
+}
 
 /* Contact_block */
 
 .Contact_block {
-    padding: 0 20px;
+    padding: 0 35px;
     background-color: #1E1823;
 }
 
@@ -547,13 +595,15 @@ footer {
     justify-content: space-between;
     padding: 50px 0;
 }
+
 .textcontact_block h1 {
     font-size: 28px;
     line-height: 34px;
-    font-weight: 500;   
+    font-weight: 500;
     color: white;
     width: 30%;
 }
+
 .textcontact_block h1 span {
     color: #FD9222;
 }
@@ -562,18 +612,26 @@ footer {
     display: flex;
     gap: 40px;
 }
-.Our_contacts h2{
+
+.Our_contacts h2 {
     padding-bottom: 10px;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
     color: white;
 }
+
 .Our_contacts ul li {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     color: white;
+    cursor: pointer;
+}
+
+.icon_two_block {
+    display: flex;
+    gap: 20px;
 }
 
 .line_two_block {
@@ -586,6 +644,7 @@ footer {
     gap: 30px;
     padding-bottom: 50px;
 }
+
 .end_block ul li a {
     padding-bottom: 50px;
     font-size: 14px;
@@ -596,38 +655,27 @@ footer {
 
 @media screen and (max-width: 1192px) {
 
-    .details_block {
-        justify-content: center;
-        gap: 10px;
-    }
-
     /* ----------------- prepare_block -------------- */
 
-    .img_block {
-        gap: 20px;
-    }
-
-    .ingredient_block {
-        height: 340px;
-    }
     .ingredient_block h2 {
         font-size: 20px;
         font-weight: 600;
     }
+
     .ingredient_block ul li {
         padding-top: 10px;
         font-size: 14px;
         font-weight: 400;
     }
-    
+
     .chocolate_block img {
         padding: 20px;
     }
-    
+
     .milk_block img {
         padding: 20px;
     }
-    
+
     .nuts_block img {
         padding: 20px;
     }
@@ -636,25 +684,28 @@ footer {
         padding: 20px;
     }
 
-    .images_block{
-        gap: 10px;
+}
+
+@media screen and (max-width: 1165px) {
+    .images_block img {
+        width: 350px;
     }
 }
 
 @media screen and (max-width: 1128px) {
 
-    .images_block img {
+    /* .images_block img {
         width: 300px;
-    }
-    
-    .image-1 img{
+    } */
+
+    /* .image-1 img {
         width: 500px;
         height: 357px;
-    }
+    } */
 
-    .ingredient_block {
+    /* .ingredient_block {
         height: 300px;
-    }
+    } */
 }
 
 @media screen and (max-width: 1112px) {
@@ -664,14 +715,16 @@ footer {
     .name_block {
         gap: 4px;
     }
+
     .name_block h1 {
         font-size: 18px;
         font-weight: 300;
     }
 
-    .course_guide_block ul{
+    .course_guide_block ul {
         gap: 10px;
     }
+
     .course_guide_block ul li a {
         font-size: 14px;
         font-weight: 25px;
@@ -684,10 +737,6 @@ footer {
         font-weight: 400;
     }
 
-    .button_block {
-        padding-top: 20px;
-        gap: 10px;
-    }
     .button_block button {
         padding: 13px 35px;
         border-radius: 100px;
@@ -695,12 +744,23 @@ footer {
         font-weight: 100;
     }
 
-    .decor_block  {
-        /* padding: 100px 0; */
-    }
     .decor_block p {
-        width: 50%;
+        width: 70%;
         font-weight: 300;
+    }
+
+    .images_block img {
+        width: 330px;
+    }
+
+    .details_block h2 {
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 1072px) {
+    .images_block img {
+        width: 320px;
     }
 }
 
@@ -709,38 +769,52 @@ footer {
     .textcontact_block h1 {
         width: 40%;
     }
+
+    .decor_block p {
+        width: 80%;
+        font-weight: 300;
+    }
+
+    .slideTwo img {
+        width: 75px;
+        height: 75px;
+        top: -45px;
+    }
+
+    .swiper-slide img {
+        width: 260px;
+    }
 }
 
 @media screen and (max-width: 1020px) {
 
-    .chocolate_block img {
-        padding: 10px;
+    .flex_block div {
+        padding: 0px;
     }
-    
-    .milk_block img {
-        padding: 10px;
+
+    .nuts {
+        padding: 0px;
     }
-    
-    .nuts_block img {
+
+    .sweet {
+        padding: 0px;
+    }
+
+    .details_block h2 {
         padding: 10px;
     }
 
-    .sweetchocolate_block img {
-        padding: 10px;
-    }
-    .sweetchocolate_block h2 {
-        padding: 20px 10px;
+    .images_block img {
+        width: 310px;
     }
 }
 
 @media screen and (max-width: 1016px) {
 
-    .ingredient_block {
-        height: 300px;
-    }
     .ingredient_block h2 {
         font-size: 16px;
     }
+
     .ingredient_block ul li {
         font-size: 13px;
     }
@@ -750,50 +824,18 @@ footer {
         font-weight: 600;
         line-height: 28px;
     }
+
     .swiper-slide button {
         font-size: 13px;
         padding: 6px 15px;
     }
-}
 
-@media screen and (max-width: 956px) {
-
-    .ingredient_block {
-        height: 300px;
-    }
-    .ingredient_block h2 {
-        font-size: 15px;
-    }
-    .ingredient_block ul li {
-        font-size: 12px;
-    }
-
-    .details_block {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .chocolate_block img {
-        padding: 20px 30px;
-    }
-    
-    .milk_block img {
-        padding: 20px 30px;
-    }
-    
-    .nuts_block img {
-        padding: 20px 30px;
-    }
-
-    .sweetchocolate_block img {
-        padding: 20px 30px;
-    }
-    .sweetchocolate_block h2 {
-        padding: 20px 30px;
+    .images_block img {
+        width: 290px;
     }
 }
 
-@media screen and (max-width: 946px) {
+@media screen and (max-width: 957px) {
 
     .course_guide_block {
         display: none;
@@ -808,13 +850,37 @@ footer {
         justify-content: space-between;
     }
 
+    .ingredient_block h2 {
+        font-size: 16px;
+    }
+
+    .ingredient_block ul li {
+        font-size: 14px;
+    }
+
+    .swiper-slide img {
+        padding-top: 10px;
+        width: 240px;
+    }
+
+    .details_block {
+        display: block;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 946px) {
+
     .advertising_block p {
         font-size: 13px;
     }
+
     .advertising_block h1 {
         padding: 20px 0;
         font-size: 20px;
     }
+
     .advertising_block img {
         width: 50px;
     }
@@ -825,6 +891,7 @@ footer {
         font-size: 26px;
         line-height: 30px;
     }
+
     .feeling_block p {
         font-size: 16px;
     }
@@ -860,40 +927,44 @@ footer {
 
 @media screen and (max-width: 928px) {
     .image-1 img {
-        width: 380px;
-        height: 298px;
-    }
-
-    .ingredient_block ul li {
-        padding-top: 8px;
-    }
-
-    .ingredient_block {
-        height: 240px;
-    }
-
-    .images_block img {
-        width: 280px;
-    }
-}
-
-@media screen and (max-width: 902px) {
-    
-    .img_block {
-        flex-direction: column;
-    }
-
-    .image-1 img {
         width: 100%;
         height: 100%;
     }
 
+    .img_block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 70px;
+        gap: 20px;
+    }
+
     .images_block img {
-        width: 260px;
+        width: 268px;
     }
 }
 
-@media screen and (max-width: 834px) {  
+@media screen and (max-width: 902px) {
+
+    .images_block img {
+        width: 260px;
+    }
+
+    .images_block {
+        gap: 10px;
+    }
+
+    .images_block img {
+        width: 250px;
+    }
+
+    .swiper-slide img {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 834px) {
+
 
     .scroll_block {
         padding-bottom: 10px;
@@ -919,10 +990,6 @@ footer {
         top: -40px;
     }
 
-    .decor_block {
-        /* padding: 100px 0; */
-    }
-
     .decor_block h1 {
         font-size: 22px;
     }
@@ -932,32 +999,49 @@ footer {
         font-weight: 600;
         line-height: 28px;
     }
+    
+    .swiper-slide img {
+        width: 220px;
+    }
 
     .images_block div {
         display: none;
     }
+
     .images_block img {
         width: 360px;
     }
 
-    .button_block {
-        padding-bottom: 40px;
+}
+
+@media screen and (max-width: 802px) {
+    .images_block img {
+        width: 340px;
+    }
+
+    .text_block h1 {
+        width: 60%;
     }
 }
 
 @media screen and (max-width: 750px) {
 
+    .text_block h1 {
+        width: 60%;
+    }
+
+    .slideTwo div p {
+        font-size: 14px;
+    }
+
     .images_block img {
         width: 300px;
     }
 
-    .swiper-slide h2 {
-        font-size: 12px;
+    .advertising_block p {
+        font-size: 14px;
     }
 
-    .advertising_block p {
-        font-size: 10px;
-    }
     .advertising_block h1 {
         padding: 20px 0;
         font-size: 16px;
@@ -966,10 +1050,12 @@ footer {
     .decor_block h1 {
         font-size: 19px;
     }
+
     .decor_block p {
         font-size: 14px;
         width: 70%;
     }
+
     .decor_block button {
         padding: 10px 30px;
         font-size: 13px;
@@ -982,6 +1068,7 @@ footer {
     .Our_contacts h2 {
         font-size: 12px;
     }
+
     .Our_contacts ul li {
         font-size: 10px;
         font-weight: 300;
@@ -990,6 +1077,7 @@ footer {
     .end_block ul {
         padding-bottom: 36px;
     }
+
     .end_block ul li a {
         padding-bottom: 20px;
         font-size: 11px;
@@ -999,13 +1087,24 @@ footer {
     }
 
     .slideTwo div h1 {
-        font-size: 14px;
-    }
-    .slideTwo div p {
-        font-size: 10px;
+        padding-top: 55px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
     }
 
-    
+    .decor_block p {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 678px) {
+
+    .images_block img {
+        width: 290px;
+    }
+
 }
 
 @media screen and (max-width: 654px) {
@@ -1035,6 +1134,7 @@ footer {
     .feeling_block h1 {
         font-size: 20px;
     }
+
     .feeling_block p {
         font-size: 13px;
     }
@@ -1046,6 +1146,10 @@ footer {
     .seller_block h1 {
         font-size: 23px;
         padding-bottom: 30px;
+    }
+
+    .images_block img {
+        width: 275px;
     }
 
     .product_block h1 {
@@ -1062,34 +1166,52 @@ footer {
 }
 
 @media screen and (max-width: 616px) {
+
     .images_block img {
-        width: 280px;
+        width: 264px;
     }
 
+    .story_blcok {
+        display: block;
+    }
+    .story_blcok p {
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .story_blcok div {
+        text-align: center;
+    }
 
+    .text_block h1 {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 591px) {
+
     .slideTwo div h1 {
         font-size: 14px;
-        padding-bottom: 10px;
+    }
+    .slideTwo div p {
+        font-size: 12px;
+    }
+
+    .images_block img {
+        width: 255px;
     }
 }
 
 @media screen and (max-width: 572px) {
+
     .images_block img {
-        width: 250px;
+        width: 240px;
     }
 
     .story_blcok p {
         font-size: 12px;
     }
-
-    .story_blcok button {
-        padding: 12px 30px;
-        font-size: 12px;
-    }
-
+    
     .slideTwo img {
         width: 60px;
         height: 60px;
@@ -1105,41 +1227,41 @@ footer {
     .decor_block h1 {
         font-size: 16px;
     }
+
     .decor_block p {
         font-size: 13px;
     }
-    .decor_block {
-        /* padding: 120px 0; */
+
+    .story_blcok p {
+        font-size: 14PX;
+    }
+    .story_blcok div {
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 551px) {
 
+    .text_block h1 {
+        width: 80%;
+    }
+
     .scroll_block {
         padding-bottom: 20px;
     }
 
-    .chocolate_block img {
-        padding: 20px 20px;
+    .swiper-slide img {
+        width: 200px;
     }
-    
-    .milk_block img {
-        padding: 20px 20px;
-    }
-
-    .nuts_block img {
-        padding: 20px 20px;
-    }
-
-    .sweetchocolate_block img {
-        padding: 20px 20px;
-    }
-
     .slideTwo div h1 {
         font-size: 14px;
     }
     .slideTwo div p {
         font-size: 10px;
+    }
+
+    .images_block img {
+        width: 220px;
     }
 
     .textcontact_block h1 {
@@ -1149,11 +1271,15 @@ footer {
     .Our_contacts h2 {
         font-size: 10px;
     }
+
     .Our_contacts ul li {
         font-size: 8px;
         font-weight: 300;
     }
-
+    
+    .end_block ul {
+        gap: 10px;
+    }
     .end_block ul li a {
         font-size: 10px;
     }
@@ -1161,37 +1287,34 @@ footer {
 
 @media screen and (max-width: 508px) {
 
+    .text_block h1 {
+        width: 100%;
+    }
+
     .button_block button {
         padding: 10px 25px;
         font-size: 10px;
         font-weight: 100;
     }
-
-    .chocolate_block img {
-        padding: 20px 10px;
+    
+    .flex_block div {
+        display: block;
     }
-
-    .milk_block img {
-        padding: 20px 10px;
-    }
-
-    .nuts_block img {
-        padding: 20px 10px;
-    }
-
-    .sweetchocolate_block img {
-        padding: 20px 10px;
-    }
-
+    
     .images_block {
         flex-wrap: wrap;
     }
+
     .images_block img {
         width: 368px;
     }
 
     .textcontact_block h1 {
         font-size: 16px;
+    }
+
+    .slideTwo div p {
+        font-size: 13px;
     }
 
     .icon_two_block img {
@@ -1210,10 +1333,6 @@ footer {
         padding: 20px 10px;
     }
 
-    .ingredient_block {
-        height: 350px;
-    }
-
     .end_block ul {
         gap: 10px;
     }
@@ -1223,7 +1342,7 @@ footer {
 
     .text_block h1 {
         font-size: 18px;
-        width: 70%;
+        width: 100%;
         padding-top: 350px;
     }
 
@@ -1243,25 +1362,10 @@ footer {
         gap: 20px;
     }
 
-    .chocolate_block img {
-        padding: 20px 30px;
+    .images_block img {
+        width: 345px;
     }
-
-    .milk_block img {
-        padding: 20px 30px;
-    }
-
-    .nuts_block img {
-        padding: 20px 30px;
-    }
-
-    .sweetchocolate_block img {
-        padding: 20px 30px;
-    }
-    .sweetchocolate_block h2 {
-        padding: 20px 30px;
-    }
-
+    
     .decor_block h1 {
         width: 50%;
     }
@@ -1272,7 +1376,19 @@ footer {
 
 }
 
+@media screen and (max-width: 431px) {
+
+    .end_block ul li a{
+        font-size: 8px;
+    }    
+
+}
+
 @media screen and (max-width: 410px) {
+
+    .text_block {
+        padding: 0 30px;
+    }
 
     .text_block h1 {
         width: 100%;
@@ -1286,14 +1402,23 @@ footer {
         flex-direction: column;
         padding: 28px 0;
     }
+
     .textcontact_block h1 {
         width: 50%;
         line-height: 18px;
         padding-bottom: 20px;
     }
 
+    .images_block img {
+        width: 320px;
+    }
+
     .Our_contacts {
         justify-content: space-between;
+    }
+    .Our_contacts ul li {
+        font-size: 10px;
+        font-weight: 300;
     }
 
     .end_block ul li a {
@@ -1301,15 +1426,26 @@ footer {
     }
 
     .story_blcok p {
-        width: 50%;
+        width: 100%;
+    }
+
+    .end_block ul {
+        flex-direction: column;
+    }
+    .end_block ul li a {
+        font-size: 10px;
     }
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 390px) {
 
-    .ingredient_block {
-        height: 400px;
+    .images_block img {
+        width: 258px;
     }
+
+}
+
+@media screen and (max-width: 374px) {
 
     .images_block img {
         width: 330px;
@@ -1336,12 +1472,13 @@ footer {
     }
 
     .images_block img {
-        width: 300px;
+        width: 280px;
     }
 
     .decor_block h1 {
         font-size: 14px;
     }
+
     .decor_block p {
         font-size: 10px;
     }
@@ -1358,10 +1495,6 @@ footer {
         font-weight: 300;
     }
 
-    .ingredient_block {
-        height: 470px;
-    }
-
     .images_block img {
         width: 260px;
     }
@@ -1370,4 +1503,3 @@ footer {
         width: 70%;
     }
 }
-
