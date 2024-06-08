@@ -946,6 +946,12 @@ footer {
 
 @media screen and (max-width: 902px) {
 
+    .advertising_block p {
+        overflow: scroll;
+        padding: 10px;
+        height: 100px;
+    }
+
     .images_block img {
         width: 260px;
     }
@@ -960,6 +966,12 @@ footer {
 
     .swiper-slide img {
         width: 230px;
+    }
+}
+
+@media screen and (max-width: 827px) {
+    .advertising_block h1 {
+        font-size: 18px;
     }
 }
 
@@ -1039,6 +1051,7 @@ footer {
     }
 
     .advertising_block p {
+        overflow: scroll;
         font-size: 14px;
     }
 
